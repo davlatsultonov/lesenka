@@ -1,0 +1,16 @@
+.slick-vertical {
+
+  .slick-prev, .slick-next {
+    transform: rotate(90deg);
+    top: auto;
+    bottom: 0;
+  }
+
+  .slick-prev {
+    left: 4px;
+  }
+
+  .slick-next {
+    right: 4px;
+  }
+}

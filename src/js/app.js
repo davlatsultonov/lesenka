@@ -3,6 +3,7 @@ import '../scss/app.scss';
 import $ from 'jquery';
 import 'jquery-mask-plugin';
 import 'slick-slider';
+import 'simplelightbox';
 
 $(document).ready(function() {
   $('[type="tel"]').mask('+7 (000) 000-0000');
@@ -11,6 +12,14 @@ $(document).ready(function() {
     $('.mobile-menu').toggleClass('active');
   });
 
+  $('.look-book--js-slider').slick({
+    infinite: false,
+    slidesToShow: 3,
+    vertical: true,
+    slidesToScroll: 1,
+    prevArrow: "<img alt='arrow icon' class='slick-prev' src='images/icons/arrow-left.svg'>",
+    nextArrow: "<img alt='arrow icon' class='slick-next' src='images/icons/arrow-right.svg'>",
+  });
   $('.banner--js-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -26,8 +35,8 @@ $(document).ready(function() {
     slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.gallery--js-slider',
-    prevArrow: "<img alt='arrow icon' class='slick-prev' src='/images/icons/arrow-left.svg'>",
-    nextArrow: "<img alt='arrow icon' class='slick-next' src='/images/icons/arrow-right.svg'>",
+    prevArrow: "<img alt='arrow icon' class='slick-prev' src='images/icons/arrow-left.svg'>",
+    nextArrow: "<img alt='arrow icon' class='slick-next' src='images/icons/arrow-right.svg'>",
     responsive: [
       {
         breakpoint: 1280,
@@ -111,4 +120,7 @@ $(document).ready(function() {
       }
     });
   }
+
+  new SimpleLightbox('.look-book-lightbox a');
+  new SimpleLightbox('.look-book-lightbox-2 a');
 });

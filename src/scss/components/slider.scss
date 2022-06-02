@@ -79,36 +79,9 @@
   }
 }
 
-#slider-dots {
-  display: inline-block;
-  margin-top: 0;
+.look-book--js-slider {
 
-  .owl-dot {
-    margin: 7.5px;
-    padding: 0;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    background-color: #9b1f39;
-    border: 1px solid #fff;
-
-    &.active {
-      background-color: #fff;
-    }
-  }
-}
-
-#gallery-slider-nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 0;
-
-  .owl-next, .owl-prev {
-    background-color: transparent;
+  .slick-slide:not(:last-child) {
+    margin-bottom: 10px;
   }
 }

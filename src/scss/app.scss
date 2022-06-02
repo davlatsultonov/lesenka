@@ -7,6 +7,7 @@ $slick-loader-path: "/node_modules/slick-slider/slick/" !default;
 $slick-arrow-color: black !default;
 @import "slick-slider/slick/slick";
 @import "slick-slider/slick/slick-theme";
+@import "simplelightbox";
 
 /* Core variables */
 @import 'base/vars';
@@ -54,3 +55,7 @@ $slick-arrow-color: black !default;
 
 /* CSS visibility */
 @import 'base/visibility';
+
+
+/* Hacks */
+@import 'dirty/hacks';

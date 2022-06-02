@@ -49,6 +49,7 @@
 
   &__img {
     @include background-cover;
+    display: block;
     min-height: 250px;
     border-radius: $base-border-radius;
     box-shadow: $base-shadow;

@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="Ora6ft2cL2SmZJywSyczsuvonUngBzGaqV7rtI1G">
+    <title>Лесенка</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__inner header--decor container">
+            <div class="header__item header__logo">
+                <a href="/" class="logo">
+                    <img src="images/icons/logo/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__item header__btn-menu visible-xxs">
+                <div class="text-with-icon header__btn-hamburger menu-toggle-btn">
+                    <div class="text-with-icon__content">
+                    <span class="text-with-icon__img">
+                        <img src="images/icons/burger.svg" alt="hamburger icon">
+                    </span>
+                        <p>
+                            Меню
+                        </p>
+                    </div>
+                </div>
+                <div class="mobile-menu">
+                    <button class="header__btn-hamburger menu-toggle-btn">Закрыть</button>
+
+                    <nav class="menu">
+                        <ul class="list list--gap-md">
+                            <li class="list__item">
+                                <a href="/" class="text-with-icon">
+                                    <div class="text-with-icon__content">
+                                        <span class="text-with-icon__img"><img src="images/icons/menu/yellow/home.svg" alt="home icon"></span>
+                                        <p class="text-size-md text-red">Главная</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="text-with-icon">
+                                    <div class="text-with-icon__content">
+                                        <span class="text-with-icon__img"><img src="images/icons/menu/yellow/about_us.svg" alt="about us icon"></span>
+                                        <p class="text-size-md text-red">О нас</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="team.html" target="_blank" class="text-with-icon">
+                                    <div class="text-with-icon__content">
+                                        <span class="text-with-icon__img"><img src="images/icons/menu/yellow/team.svg" alt="team icon"></span>
+                                        <p class="text-size-md text-red">Команда</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="kindergarden.html" target="_blank" class="text-with-icon">
+                                    <div class="text-with-icon__content">
+                                        <span class="text-with-icon__img"><img src="images/icons/menu/yellow/kindergarten.svg" alt="kindergarten icon"></span>
+                                        <p class="text-size-md text-red">Детский сад</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="text-with-icon">
+                                    <div class="text-with-icon__content">
+                                        <span class="text-with-icon__img"><img src="images/icons/menu/yellow/development.svg" alt="development icon"></span>
+                                        <p class="text-size-md text-red">Ранее развитие</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="text-with-icon">
+                                    <div class="text-with-icon__content">
+                                        <span class="text-with-icon__img"><img src="images/icons/menu/yellow/user.svg" alt="user icon"></span>
+                                        <p class="text-size-md text-red">Родителям</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="text-with-icon">
+                                    <div class="text-with-icon__content">
+                                        <span class="text-with-icon__img"><img src="images/icons/menu/yellow/testimonial.svg" alt="testimonial icon"></span>
+                                        <p class="text-size-md text-red">Отзывы</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="text-with-icon">
+                                    <div class="text-with-icon__content">
+                                        <span class="text-with-icon__img"><img src="images/icons/menu/yellow/gallery.svg" alt="gallery icon"></span>
+                                        <p class="text-size-md text-red">Фотогалерея</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="text-with-icon">
+                                    <div class="text-with-icon__content">
+                                        <span class="text-with-icon__img"><img src="images/icons/menu/yellow/phone.svg" alt="phone icon"></span>
+                                        <p class="text-size-md text-red">Контакты</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+            <div class="header__item hidden-xxs">
+                <ul class="list list--horizontal">
+                    <li class="list__item">
+                        <div class="text-with-icon">
+                            <a href="#">
+                                <div class="text-with-icon__content">
+                                <span class="text-with-icon__img">
+                                    <img src="images/icons/menu/red/kindergarten.svg" alt="kid icon">
+                                </span>
+                                    <p class="text-size-md text-red">Детский сад</p>
+                                </div>
+                            </a>
+                            <div class="text-with-icon__footer">
+                                <a href="tel:+7 (913) 012-45-85" class="text-size-sm text-bold text-yellow">+7 (913) 012-45-85</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item hidden-sm">
+                        <div class="text-with-icon">
+                            <a href="#">
+                                <div class="text-with-icon__content">
+                                <span class="text-with-icon__img">
+                                    <img src="images/icons/menu/red/development.svg" alt="development icon">
+                                </span>
+                                    <p class="text-size-md text-red">Раннее развитие</p>
+                                </div>
+                            </a>
+                            <div class="text-with-icon__footer">
+                                <a href="tel:+7 (913) 012-45-85" class="text-size-sm text-bold text-yellow">+7 (913) 455-12-07</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__item">
+                <a href="#" class="text-with-icon header__btn-visual-impaired">
+                    <div class="text-with-icon__content">
+                    <span class="text-with-icon__img">
+                        <img src="images/icons/eye/eye_black.svg" class="hidden-md" alt="eye icon">
+                        <img src="images/icons/eye/eye_red.svg" class="visible-md" alt="eye icon">
+                    </span>
+                        <p class="text-size-sm text-link hidden-md">
+                            Версия для слабовидящих
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="header__item">
+                <a href="#" class="text-with-icon header__btn-call-back">
+                    <div class="text-with-icon__content">
+                    <span class="text-with-icon__img">
+                        <img src="images/icons/menu/red/phone.svg" alt="phone icon">
+                    </span>
+                        <p class="text-size-sm text-link">
+                            Обратный звонок
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content__inner container">
+            <aside class="aside">
+                <nav class="menu">
+                    <ul class="list list--gap-md">
+                        <li class="list__item">
+                            <a href="/" class="text-with-icon">
+                                <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img"><img src="images/icons/menu/yellow/home.svg" alt="home icon"></span>
+                                    <p class="text-size-md text-red">Главная</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="text-with-icon">
+                                <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img"><img src="images/icons/menu/yellow/about_us.svg" alt="about us icon"></span>
+                                    <p class="text-size-md text-red">О нас</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="team.html" target="_blank" class="text-with-icon">
+                                <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img"><img src="images/icons/menu/yellow/team.svg" alt="team icon"></span>
+                                    <p class="text-size-md text-red">Команда</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="kindergarden.html" target="_blank" class="text-with-icon">
+                                <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img"><img src="images/icons/menu/yellow/kindergarten.svg" alt="kindergarten icon"></span>
+                                    <p class="text-size-md text-red">Детский сад</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="text-with-icon">
+                                <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img"><img src="images/icons/menu/yellow/development.svg" alt="development icon"></span>
+                                    <p class="text-size-md text-red">Ранее развитие</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="text-with-icon">
+                                <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img"><img src="images/icons/menu/yellow/user.svg" alt="user icon"></span>
+                                    <p class="text-size-md text-red">Родителям</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="text-with-icon">
+                                <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img"><img src="images/icons/menu/yellow/testimonial.svg" alt="testimonial icon"></span>
+                                    <p class="text-size-md text-red">Отзывы</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="text-with-icon">
+                                <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img"><img src="images/icons/menu/yellow/gallery.svg" alt="gallery icon"></span>
+                                    <p class="text-size-md text-red">Фотогалерея</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="text-with-icon">
+                                <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img"><img src="images/icons/menu/yellow/phone.svg" alt="phone icon"></span>
+                                    <p class="text-size-md text-red">Контакты</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="decor decor--teapot">
+                    <img src="images/bg_decor/teapot.svg" alt="teapot">
+                </div>
+
+                <h3>
+                    Наши соцсети
+                </h3>
+
+                <div class="aside-list-group">
+                    <ul class="list list--social list--horizontal aside-list-group__item">
+                        <li class="list__item">
+                            <a href="#">
+                                <img src="images/icons/social/vk.svg" alt="vk icon">
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#">
+                                <img src="images/icons/social/whatsapp.svg" alt="whatsapp icon">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="list aside-list-group__item">
+                        <li class="list__item">
+                            <div class="text-with-icon">
+                                <a href="#">
+                                    <div class="text-with-icon__content">
+                            <span class="text-with-icon__img">
+                                <img src="images/icons/menu/red/kindergarten.svg" alt="kid icon">
+                            </span>
+                                        <p class="text-size-md text-red">Детский сад</p>
+                                    </div>
+                                </a>
+                                <div class="text-with-icon__footer">
+                                    <a href="tel:+7 (913) 012-45-85" class="text-size-sm text-bold text-yellow">+7 (913) 012-45-85</a>
+                                    <a href="#" class="text-red">
+                                        г.Новосибирск<br>
+                                        ул.Чехова, д.82
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <div class="text-with-icon">
+                                <a href="#">
+                                    <div class="text-with-icon__content">
+                                        <div class="text-with-icon__img">
+                                            <img src="images/icons/menu/red/development.svg" alt="development icon">
+                                        </div>
+                                        <p class="text-size-md text-red">Раннее развитие</p>
+                                    </div>
+                                </a>
+                                <div class="text-with-icon__footer">
+                                    <a href="tel:+7 (913) 012-45-85" class="text-size-sm text-bold text-yellow">+7 (913) 455-12-07</a>
+                                    <a href="#" class="text-red">
+                                        г.Новосибирск<br>
+                                        ул. Кирова, 27/3
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item">
+                            <button class="button button--contour">
+                                <img src="images/icons/question.svg" alt="question icon">
+                                <span class="text-size-xs text-bold text-red">Задать вопрос</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <h1>
+                    Акции и скидки
+                </h1>
+
+                <div class="aside-card-decor">
+                    <div class="card card--compact aside-card">
+                        <div class="card__img">
+                            <img src="images/programs/artist.svg" alt="method icon">
+                        </div>
+                        <div class="card__footer text-center">
+                            <a href="#" class="button button--link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <main class="main">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="/">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        Команда
+                    </li>
+                </ul>
+
+                <section>
+                    <h1>Наша команда</h1>
+                    <h2 class="text-black text-thin">Выберите филиал:</h2>
+                    <div class="list list--horizontal list--gap-md division-tab tab_js">
+                        <div class="list__item card card--compact card--compact-width-lg division-tab__item active">
+                            <div class="text-with-icon">
+                                <div class="text-with-icon__content">
+                                    <div class="text-with-icon__img">
+                                        <img src="images/icons/menu/red/kindergarten.svg" alt="kindergarten" style="width: 35px;">
+                                    </div>
+                                    <h2>
+                                        Монтессори-детский сад<br> «Лесенка»
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list__item card card--compact card--compact-width-lg division-tab__item">
+                            <div class="text-with-icon">
+                                <div class="text-with-icon__content">
+                                    <div class="text-with-icon__img">
+                                        <img src="images/icons/menu/red/development.svg" alt="development" style="width: 35px;">
+                                    </div>
+                                    <h2>
+                                        Монтессори-школа раннего<br> развития «Лесенка»
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h1>Администрация</h1>
+                    <div class="column column--4">
+                        <div class="card column__item">
+                            <div class="card__img card__img--lg" style="background-image: url('images/team/executive.jpg')"></div>
+                            <h2>
+                                Олеся Олеговна<br>
+                                <span class="text-thin">Перминова</span>
+                            </h2>
+                            <p>
+                                Руководитель школы гармоничного развития детей и детского сада «Лесенка Монтессори»
+                            </p>
+                            <div class="card__footer">
+                                <ul class="list list--gap-md">
+                                    <li class="list__item">
+                                        <a href="employeePage.html" class="text-red text-link" target="_blank">Подробнее о преподавателе</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Посмотреть программы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card column__item">
+                            <div class="card__img card__img--lg" style="background-image: url('images/team/executive_2.jpg')"></div>
+                            <h2>
+                                Жанна Александровна<br>
+                                <span class="text-thin">Юдина</span>
+                            </h2>
+                            <p>
+                                Управляющая школой гармоничного развития  «Лесенка Монтессори»
+                            </p>
+                            <div class="card__footer">
+                                <ul class="list list--gap-md">
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Подробнее о преподавателе</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Посмотреть программы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card column__item">
+                            <div class="card__img card__img--lg" style="background-image: url('images/team/admin.jpg')"></div>
+                            <h2>
+                                Юлия Викторовна<br>
+                                <span class="text-thin">Шатюк</span>
+                            </h2>
+                            <p>
+                                Администратор детского сада
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h1>Администрация</h1>
+                    <div class="column column--4">
+                        <div class="card column__item">
+                            <div class="card__img card__img--lg" style="background-image: url('images/team/teachers/img_1.jpg')"></div>
+                            <h2>
+                                Ситора Давлатовна<br>
+                                <span class="text-thin">Давлатова</span>
+                            </h2>
+                            <p>
+                                Методист, монтессори-педагог, музыкальный руководитель
+                            </p>
+                            <div class="card__footer">
+                                <ul class="list list--gap-md">
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Подробнее о преподавателе</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Посмотреть программы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card column__item">
+                            <div class="card__img card__img--lg" style="background-image: url('images/team/teachers/img_2.jpg')"></div>
+                            <h2>
+                                Анастасия Вадимовна<br>
+                                <span class="text-thin">Костюк</span>
+                            </h2>
+                            <p>
+                                Монтессори-педагог
+                            </p>
+                            <div class="card__footer">
+                                <ul class="list list--gap-md">
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Подробнее о преподавателе</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Посмотреть программы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card column__item">
+                            <div class="card__img card__img--lg" style="background-image: url('images/team/teachers/img_3.jpg')"></div>
+                            <h2>
+                                Галина Евгеньевна<br>
+                                <span class="text-thin">Давыдова</span>
+                            </h2>
+                            <p>
+                                Монтессори-педагог
+                            </p>
+                            <div class="card__footer">
+                                <ul class="list list--gap-md">
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Подробнее о преподавателе</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Посмотреть программы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card column__item">
+                            <div class="card__img card__img--lg" style="background-image: url('images/team/teachers/img_4.jpg')"></div>
+                            <h2>
+                                Елена Анатольевна<br>
+                                <span class="text-thin">Панова</span>
+                            </h2>
+                            <p>
+                                Монтессори-педагог, педагог группы выходного дня «Ступеньки»
+                            </p>
+                            <div class="card__footer">
+                                <ul class="list list--gap-md">
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Подробнее о преподавателе</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Посмотреть программы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card column__item">
+                            <div class="card__img card__img--lg" style="background-image: url('images/team/teachers/img_5.jpg')"></div>
+                            <h2>
+                                Ирина Станиславовна<br>
+                                <span class="text-thin">Нижегородцева</span>
+                            </h2>
+                            <p>
+                                Методист, Воспитатель группы «Светлячки»
+                            </p>
+                            <div class="card__footer">
+                                <ul class="list list--gap-md">
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Подробнее о преподавателе</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Посмотреть программы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card column__item">
+                            <div class="card__img card__img--lg" style="background-image: url('images/team/teachers/img_6.jpg')"></div>
+                            <h2>
+                                Александра Александровна<br>
+                                <span class="text-thin">Леонова</span>
+                            </h2>
+                            <p>
+                                Монтессори-педагог
+                            </p>
+                            <div class="card__footer">
+                                <ul class="list list--gap-md">
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Подробнее о преподавателе</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Посмотреть программы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card column__item">
+                            <div class="card__img card__img--lg" style="background-image: url('images/team/teachers/img_7.jpg')"></div>
+                            <h2>
+                                Татьяна Викторовна<br>
+                                <span class="text-thin">Шипулина</span>
+                            </h2>
+                            <p>
+                                Педагог группы продленного дня
+                            </p>
+                            <div class="card__footer">
+                                <ul class="list list--gap-md">
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Подробнее о преподавателе</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Посмотреть программы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card column__item">
+                            <div class="card__img card__img--lg" style="background-image: url('images/team/teachers/img_8.jpg')"></div>
+                            <h2>
+                                Любовь Евгеньевна<br>
+                                <span class="text-thin">Галузина</span>
+                            </h2>
+                            <p>
+                                Воспитатель группы «Божьи коровки»
+                            </p>
+                            <div class="card__footer">
+                                <ul class="list list--gap-md">
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Подробнее о преподавателе</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#" class="text-red text-link" target="_blank">Посмотреть программы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="button button--contour">Показать еще +16</button>
+                    </div>
+                </section>
+
+                <section class="double-info">
+                    <div>
+                        <h1>Записаться на экскурсию</h1>
+                        <form class="form form--decor">
+                            <div class="form__inner">
+                                <div class="form__content">
+                                    <div class="form__item">
+                                        <div class="form__input"> <!--При наличии ошибки добавляем для этого блока класс: form__input--error-->
+                                            <label>
+                                                <span>Контактное лицо</span>
+                                                <input type="text" placeholder="Иван Иванов Иванович">
+                                            </label>
+                                            <small>Ошибка при заполнении поля</small>
+                                        </div>
+                                        <div class="form__input">
+                                            <label>
+                                                <span>Телефон</span>
+                                                <input type="tel" placeholder="+7 (000) 000-00-00">
+                                            </label>
+                                            <small>Ошибка при заполнении поля</small>
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="form__select">
+                                            <label>
+                                                <span>Возраст ребенка</span>
+                                                <div class="select-block">
+                                                    <ul class="select-block__default">
+                                                        <li class="select-block__item">
+                                                            Выбрать
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="select-block__list">
+                                                        <li class="select-block__item">
+                                                            Выбрать
+                                                        </li>
+                                                        <li class="select-block__item">
+                                                            1
+                                                        </li>
+                                                        <li class="select-block__item">
+                                                            2
+                                                        </li>
+                                                        <li class="select-block__item">
+                                                            3
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <div class="form__btn">
+                                            <label></label>
+                                            <button class="button button--filled-white ">
+                                                <span class="text-bold">Отправить</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__note">
+                                    Нажимая «Отправить заявку» Вы даете согласие на обработку своих персональных данных, в соответствии с
+                                    Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях, определенных Политикой
+                                    информационной безопасности
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <h1 class="title-with-button">
+                            Отзывы о центре
+                            <a href="#" target="_blank" class="button button--link text-size-xxs">Читать все</a>
+                        </h1>
+
+                        <div class="testimonial">
+                            <div class="testimonial__header">
+                                <h3>Лилианна Малиновская</h3>
+
+                                <div class="rating">
+                                    <div class="text-with-icon">
+                                        <div class="text-with-icon__content text-size-xs text-bold text-red">
+                                            <span>5.0</span>
+                                            <span class="text-with-icon__img">
+                                                <img class="" src="images/icons/star.svg" alt="star icon">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial__date">
+                                22 декабря 2021г.
+                            </div>
+                            <div class="testimonial__desc">
+                                Больше года посещаем с сыном занятия в группе "Вместе с мамой" в детском центре развития Лесенка.
+                                Мне близка педагогика Марии Монтессори, поэтому несмотря на то, что живём в друго детском центре развития Лесенка.
+                                Мне близка педагогика Марии Монтессори, поэтому несмотря на то, что живём в друго
+                            </div>
+                            <div class="testimonial-gallery">
+                                <a href="images/articles/img_1.jpg" class="testimonial-gallery__img">
+                                    <span style="background-image: url('images/articles/img_1.jpg')"></span>
+                                </a>
+                                <a href="images/articles/img_2.jpg" class="testimonial-gallery__img">
+                                    <span style="background-image: url('images/articles/img_2.jpg')"></span>
+                                </a>
+                            </div>
+                            <div class="testimonial__footer">
+                                <a href="#" target="_blank" class="button button--link">Читать полностью</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <div class="footer-wrapper">
+        <div class="footer">
+            <div class="decor decor--footer">
+                <img src="images/bg_decor/drafts/thick_circle.svg" alt="thick crooked">
+                <img src="images/bg_decor/drafts/thin_long.svg" alt="thin long">
+                <img src="images/bg_decor/flowers/single.svg" alt="flower">
+                <img src="images/bg_decor/drafts/thick_horizontal.svg" alt="thick horizontal">
+                <img src="images/bg_decor/drafts/dots.svg" alt="dots">
+                <img src="images/bg_decor/drafts/thick_crooked.svg" alt="thick crooked">
+                <img src="images/bg_decor/drafts/echo.svg" alt="echo">
+            </div>
+            <div class="footer__bg"></div>
+            <div class="container footer__inner">
+                <div class="footer__item footer__logo">
+                    <a href="/" class="logo">
+                        <img src="images/icons/logo/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="footer__item">
+                    <div class="list-group footer__list-group">
+                        <ul class="list list--gap-md list-group__item">
+                            <li class="list__item">
+                                <a href="#" class="text-with-icon">
+                                    <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="images/icons/menu/red/about_us.svg" alt="about us icon">
+                                    </span>
+                                        <p class="text-size-sm text-red">О нас</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="text-with-icon">
+                                    <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="images/icons/menu/red/team.svg" alt="team icon">
+                                    </span>
+                                        <p class="text-size-sm text-red">Команда</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list list--gap-md list-group__item">
+                            <li class="list__item">
+                                <a href="#" class="text-with-icon">
+                                    <main class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="images/icons/menu/red/kindergarten.svg" alt="kindergarten icon">
+                                    </span>
+                                        <p class="text-size-sm text-red">Десткий сад</p>
+                                    </main>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="text-with-icon">
+                                    <main class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="images/icons/menu/red/development.svg" alt="development icon">
+                                    </span>
+                                        <p class="text-size-sm text-red">Ранее развитие</p>
+                                    </main>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list list--gap-md list-group__item">
+                            <li class="list__item">
+                                <a href="#" class="text-with-icon">
+                                    <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="images/icons/menu/red/testimonial.svg" alt="testimonial icon">
+                                    </span>
+                                        <p class="text-size-sm text-red">Отзывы</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="text-with-icon">
+                                    <div class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="images/icons/menu/red/gallery.svg" alt="gallery icon">
+                                    </span>
+                                        <p class="text-size-sm text-red">Фотогалерея</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list list--gap-md list-group__item">
+                            <li class="list__item">
+                                <a href="#" class="text-with-icon">
+                                    <main class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="images/icons/menu/red/user.svg" alt="user. icon">
+                                    </span>
+                                        <p class="text-size-sm text-red">Родителям</p>
+                                    </main>
+                                </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#" class="text-with-icon">
+                                    <main class="text-with-icon__content">
+                                    <span class="text-with-icon__img">
+                                        <img src="images/icons/menu/red/phone.svg" alt="phone icon">
+                                    </span>
+                                        <p class="text-size-sm text-red">Контакты</p>
+                                    </main>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="list list--gap-sm footer__policy hidden-sm">
+                        <li class="list__item">
+                            <a href="#" class="text-link">
+                                Политика информационной безопасности
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="text-link">
+                                Документы и стандарты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item footer__item--response">
+                    <ul class="list list--gap-md">
+                        <li class="list__item">
+                            <a href="tel:+7 (383) 299-53-46" class="text-with-icon">
+                                <div class="text-with-icon__content">
+                                <span class="text-with-icon__img">
+                                    <img src="images/icons/menu/red/phone.svg" alt="phone icon">
+                                </span>
+                                    <p class="text-size-sm">+7 (383) 299-53-46</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="tel:+7 (913) 012-45-85" class="text-with-icon">
+                                <div class="text-with-icon__content">
+                                <span class="text-with-icon__img">
+                                    <img src="images/icons/menu/red/phone.svg" alt="phone icon">
+                                </span>
+                                    <p class="text-size-sm">+7 (913) 012-45-85</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button class="button button--contour">
+                        <img src="images/icons/question.svg" alt="question icon">
+                        <span class="text-size-xs text-bold text-red">Задать вопрос</span>
+                    </button>
+
+                    <ul class="list list--gap-sm footer__policy visible-sm">
+                        <li class="list__item">
+                            <a href="#" class="text-link">
+                                Политика информационной безопасности
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="text-link">
+                                Документы и стандарты
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            (с) ООО Центр развития детей Лесенка, 2022
+        </div>
+    </div>
+</div>
+</body>
+</html>
