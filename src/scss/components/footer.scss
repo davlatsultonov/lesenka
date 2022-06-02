@@ -1,0 +1,139 @@
+.footer-wrapper {
+  padding-top: 80px;
+
+  @include bp(xlg) {
+    overflow: hidden;
+  }
+}
+
+.footer {
+  max-width: 1360px;
+  width: calc(100% - 30px);
+  margin: auto;
+  position: relative;
+  --base-layer: 30;
+
+  @include bp(sm) {
+    max-width: $screen-xs;
+  }
+
+  &__inner {
+    display: flex;
+    padding: 34px 20px;
+    position: relative;
+    z-index: var(--base-layer);
+
+    @include bp(xlg) {
+      justify-content: space-between;
+    }
+
+    @include bp(md) {
+      padding-top: 10px;
+      flex-direction: column;
+    }
+
+    @include bp(sm) {
+      max-width: 290px;
+    }
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 60px;
+
+      @include bp(xlg) {
+        margin-right: 0;
+      }
+    }
+
+    .list + .button {
+      margin-top: 33px;
+
+      @include bp(md) {
+        margin-top: 0;
+        margin-left: 26px;
+      }
+
+      @include bp(sm) {
+        margin-top: 33px;
+        margin-left: 0;
+      }
+    }
+
+    &--response {
+
+      @include bp(md) {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+
+      @include bp(sm) {
+        display: block;
+      }
+    }
+  }
+
+  &__logo {
+    max-width: 236px;
+    margin-right: 45px;
+
+    @include bp(xlg) {
+      margin-right: 0;
+    }
+
+    @include bp(md) {
+      margin-bottom: 30px;
+      align-self: center;
+    }
+  }
+
+  &__list-group {
+    margin-bottom: 35px;
+
+    @include bp(xlg) {
+      grid-template-columns: repeat(3, auto);
+    }
+
+    @include bp(md) {
+      grid-template-columns: repeat(4, auto);
+    }
+
+    @include bp(sm) {
+      grid-template-columns: repeat(1, auto);
+    }
+  }
+
+  &__policy {
+
+    @include bp(md) {
+      margin-top: 0;
+      margin-left: 26px;
+    }
+
+    @include bp(sm) {
+      margin-top: 20px;
+      margin-left: 0;
+      font-size: 12px;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    background-color: #fdf0df;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: var(--base-layer);
+  }
+
+  &-copyright {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #626262;
+    font-size: 12px;
+  }
+}

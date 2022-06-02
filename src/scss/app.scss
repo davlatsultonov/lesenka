@@ -1,0 +1,56 @@
+/* By Athlon Front-End Team */
+// slick-carousel
+// this styles are needed to fix slick
+$slick-font-path: "/node_modules/slick-slider/slick/fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "/node_modules/slick-slider/slick/" !default;
+$slick-arrow-color: black !default;
+@import "slick-slider/slick/slick";
+@import "slick-slider/slick/slick-theme";
+
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* Fonts */
+@import 'base/fonts';
+
+/* Mixins, helpers and functions */
+@import 'base/mixins';
+
+/* CSS global */
+@import 'base/global';
+
+/* Vendor */
+
+/* Components */
+@import "components/textwithicon";
+@import "components/list";
+@import "components/button";
+@import "components/steps";
+@import "components/timetable";
+@import "components/lookbook";
+@import "components/dailyRegime";
+@import "components/tab";
+@import "components/breadcrumbs";
+@import "components/rating";
+@import "components/gallery";
+@import "components/testimonial";
+@import "components/form";
+@import "components/achievments";
+@import "components/banner";
+@import "components/aside";
+@import "components/decor";
+@import "components/menu";
+@import "components/header";
+@import "components/footer";
+@import "components/overwritten";
+@import "components/slider";
+@import "components/card";
+@import "components/columns";
+@import "components/documnets";
+
+/* CSS visibility */
+@import 'base/visibility';

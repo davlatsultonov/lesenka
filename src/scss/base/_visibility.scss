@@ -1,0 +1,99 @@
+.hidden-xlg {
+  display: none;
+
+  &-flex {
+    display: none;
+  }
+}
+
+.visible-xlg {
+  display: block;
+
+  &-flex {
+    display: block;
+  }
+}
+
+.hidden-md {
+  display: block;
+
+  &-flex {
+    display: flex;
+  }
+
+  &, &-flex {
+    @include bp(xlg) {
+      display: none;
+    }
+  }
+}
+
+.visible-md {
+  display: none;
+
+  @include bp(xlg) {
+    display: block;
+  }
+
+  &-flex {
+    @include bp(xlg) {
+      display: flex;
+    }
+  }
+}
+
+.hidden-sm {
+  display: block;
+
+  &-flex {
+    display: flex;
+  }
+
+  &, &-flex {
+    @include bp(md) {
+      display: none;
+    }
+  }
+}
+
+.visible-sm {
+  display: none;
+
+  @include bp(md) {
+    display: block;
+  }
+
+  &-flex {
+    @include bp(md) {
+      display: flex;
+    }
+  }
+}
+
+.hidden-xxs {
+  display: block;
+
+  &--flex {
+    display: flex;
+  }
+
+  &, &-flex {
+    @include bp(sm) {
+      display: none;
+    }
+  }
+}
+
+.visible-xxs {
+  display: none;
+
+  @include bp(sm) {
+    display: block;
+  }
+
+  &-flex {
+    @include bp(sm) {
+      display: flex;
+    }
+  }
+}

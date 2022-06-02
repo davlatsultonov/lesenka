@@ -1,0 +1,40 @@
+.gallery {
+  border: 15px solid #fff;
+  border-radius: $base-border-radius;
+  box-shadow: $base-shadow;
+  background-color: #fff;
+
+  &:not(.slick-initialized) {
+    max-height: 283px;
+    overflow: hidden;
+  }
+
+  &__item {
+    @include background-cover;
+    width: 100%;
+    height: 250px;
+    border-radius: $base-border-radius;
+  }
+
+  &-hash-navigation {
+    justify-content: center;
+    max-width: 286px;
+    margin: auto;
+
+    @include bp(xlg) {
+      max-width: 233px;
+    }
+
+    @include bp(md) {
+      max-width: 286px;
+    }
+
+    @include bp(sm) {
+      max-width: 233px;
+    }
+
+    .owl-stage {
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,219 @@
+.timetable {
+  --column1: 135px;
+  --column2: 390px;
+  --column3: 345px;
+
+  section {
+    padding-left: 25px;
+    padding-right: 25px;
+    flex-grow: 1;
+
+    @include bp(md) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &:not(:last-of-type) {
+      border-right: 1px solid #ccc;
+
+      @include bp(md) {
+        border-right: none;
+      }
+    }
+
+    &:first-child {
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 17%;
+      padding-left: 20px;
+
+      @include bp(xlg) {
+        flex-basis: 20%;
+      }
+
+      @include bp(md) {
+        padding-left: 10px;
+      }
+    }
+
+    &:nth-child(2) {
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 45%;
+
+      @include bp(xlg) {
+        flex-basis: 45%;
+      }
+    }
+
+    &:nth-child(3) {
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 44%;
+
+      @include bp(xlg) {
+        flex-basis: 40%;
+      }
+    }
+  }
+
+  &-header {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    box-shadow: $base-shadow;
+    color: $base-yellow;
+    border-radius: $base-border-radius;
+
+    @include bp(md) {
+      display: none;
+    }
+
+    section {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+
+  &-days {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &-day {
+    display: flex;
+
+    @include bp(md) {
+      cursor: pointer;
+      max-height: 120px;
+      position: relative;
+      overflow: hidden;
+      flex-direction: column;
+      border: 1px solid $base-yellow;
+      border-radius: $base-border-radius;
+      transition: max-height 250ms ease-in-out;
+    }
+
+    &:after {
+
+      @include bp(md) {
+        content: '';
+        display: block;
+        font-size: 14px;
+        position: absolute;
+        height: 34px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, .60) 0%, #ffffff 100%);
+      }
+    }
+
+    &.active {
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+
+    section {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      line-height: 1.4;
+
+      @include bp(md) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 150px;
+      }
+
+      @include bp(sm) {
+        padding-left: 15px;
+      }
+
+      &:first-child {
+
+        @include bp(md) {
+          position: absolute;
+          font-size: 14px;
+          background-color: $base-yellow;
+          color: #fff;
+          margin: 10px;
+          padding: 5px 10px;
+          border-radius: 10px;
+        }
+
+        @include bp(sm) {
+          position: relative;
+          text-align: center;
+        }
+      }
+
+      ul:not(:last-of-type) {
+        margin-bottom: 25px;
+      }
+
+      small {
+        font-size: 8px;
+        vertical-align: middle;
+        margin-right: 2px;
+      }
+    }
+
+    &__header {
+      display: none;
+
+      @include bp(md) {
+        display: block;
+      }
+    }
+  }
+
+  [data-timetable-section].active {
+
+    @include bp(md) {
+      width: 60px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+    }
+
+
+    &:after {
+
+      @include bp(md) {
+        content: '...';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    * {
+
+      @include bp(md) {
+        display: none;
+      }
+    }
+  }
+
+  @include bp(xlg) {
+    --column2: 310px;
+    --column3: 310px;
+  }
+
+  @include bp(md) {
+    --column2: 280px;
+    --column3: 280px;
+  }
+}
+
+

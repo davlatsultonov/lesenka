@@ -1,0 +1,38 @@
+.achievements {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 20px 10px;
+
+  @include bp(xlg) {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  @include bp(md) {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @include bp(sm) {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 0;
+
+    @include bp(sm) {
+      font-size: 28px;
+    }
+
+    small {
+      font-size: 18px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+
+    @include bp(sm) {
+      font-size: 14px;
+    }
+  }
+}

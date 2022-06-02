@@ -1,0 +1,186 @@
+.header {
+
+  @include bp(sm) {
+    box-shadow: $base-shadow;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 0;
+  }
+
+  &.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 22px;
+    padding-top: 30px;
+    justify-content: space-between;
+
+    @include bp(xlg) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 20px;
+
+    @include bp(md) {
+      margin-right: 0;
+    }
+
+    @include bp(sm) {
+      max-width: 120px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__btn {
+
+    @mixin mobileBtnStyles() {
+      background-color: #fff;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 40px;
+      border: 1px solid $base-red;
+      border-radius: 5px;
+
+      @include bp(xxs) {
+        width: 35px;
+      }
+    }
+
+    &-hamburger {
+      @include mobileBtnStyles;
+      align-items: baseline;
+      width: 98px;
+      padding-left: 8px;
+      padding-right: 8px;
+      color: $base-red;
+
+      @include bp(xxs) {
+        width: 35px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      p {
+        margin-top: 1px;
+        margin-left: 5px;
+
+        @include bp(xxs) {
+          display: none;
+        }
+      }
+    }
+
+    &-visual-impaired {
+
+      img {
+        width: 36px;
+
+        @include bp(xlg) {
+          width: 22px;
+        }
+
+        @include bp(md) {
+          width: 18px;
+        }
+      }
+
+      @include bp(xlg) {
+        @include mobileBtnStyles;
+      }
+
+      @include bp(md) {
+        margin-left: auto;
+        margin-right: 10px;
+      }
+
+      @include bp(sm) {
+        margin-right: 5px;
+      }
+    }
+
+    &-call-back {
+
+      @media (max-width: 860px) {
+        @include mobileBtnStyles;
+      }
+
+      img {
+
+        @include bp(sm) {
+          width: 12px;
+        }
+      }
+
+      p {
+        @media (max-width: 860px) {
+          display: none;
+        }
+      }
+    }
+
+    &-menu {
+
+      @include bp(sm) {
+        order: -1;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &--decor {
+    background: url("../images/bg_decor/drafts/thick_short.svg") no-repeat 245px -6px,
+                url("../images/bg_decor/flowers/single.svg") no-repeat 80% -23px,
+                url("../images/bg_decor/flowers/bunch.svg") no-repeat 95% 6px;
+
+    @include bp(xlg) {
+      background-position: 245px -25px, 75% -40px, 97% -5px;
+    }
+
+    @include bp(md) {
+      background-position: 29.5% -18px, 74% -38px, 95% 6px;
+    }
+
+    @include bp(sm) {
+      background: none;
+    }
+  }
+
+  .text-size {
+
+    &-md {
+
+      @include bp(xlg) {
+        font-size: 18px;
+      }
+    }
+
+    &-sm {
+
+      @include bp(xlg) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .list--horizontal .list__item {
+    margin-bottom: 0;
+  }
+}

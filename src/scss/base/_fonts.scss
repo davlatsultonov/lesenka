@@ -1,0 +1,26 @@
+/**
+ * Fonts
+*/
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url('../fonts/roboto/Roboto-Regular.ttf') format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url('../fonts/roboto/Roboto-Bold.ttf') format("truetype");
+  font-display: swap;
+}
+
+/*
+@font-face {
+  font-family: 'DINP-R';
+  src: url("../fonts/DINPro-Regular.eot?") format("eot"),
+  url("../fonts/DINPro-Regular.woff") format("woff"),
+  url("../fonts/DINPro-Regular.ttf") format("truetype");
+  font-style: normal;
+}*/

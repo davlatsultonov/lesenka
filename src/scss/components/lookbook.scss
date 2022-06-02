@@ -1,0 +1,72 @@
+@mixin whenTablet() {
+
+  @include bp(sm) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.look-book {
+  display: flex;
+  justify-content: space-between;
+
+  @include bp(sm) {
+    flex-direction: column;
+  }
+
+  &__column {
+    width: calc(50% - 10px);
+    @include whenTablet;
+
+    &--width-md {
+      width: calc(36% - 10px);
+
+      @include bp(md) {
+        width: calc(30% - 10px);
+      }
+
+      @include whenTablet;
+    }
+
+    &--width-sm {
+      width: calc(25% - 10px);
+
+      @include bp(md) {
+        width: calc(30% - 10px);
+      }
+
+      @include whenTablet;
+    }
+
+    &--width-xs {
+      width: 64px;
+
+      @include bp(sm) {
+        display: none;
+      }
+    }
+  }
+
+  &__img {
+    @include background-cover;
+    min-height: 250px;
+    border-radius: $base-border-radius;
+    box-shadow: $base-shadow;
+
+    @include bp(sm) {
+      min-height: 200px;
+    }
+
+    &--sm {
+      min-height: 60px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  & + h1, & + h2, & + .column {
+    margin-top: 30px;
+  }
+}

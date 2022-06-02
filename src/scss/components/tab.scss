@@ -1,0 +1,28 @@
+.division-tab {
+
+  &.list--horizontal.list--gap-md .list__item:not(:last-child) {
+
+    @include bp(xlg) {
+      margin-right: 20px;
+    }
+
+    @include bp(md) {
+      margin-right: 0;
+    }
+  }
+
+  .card--compact-width-lg {
+
+    @include bp(md) {
+      min-width: 100%;
+    }
+  }
+}
+
+.tab_js {
+
+  .card {
+    cursor: pointer;
+    user-select: none;
+  }
+}
