@@ -26,8 +26,8 @@ $(document).ready(function() {
     slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.gallery--js-slider',
-    prevArrow: "<img class='slick-prev' src='/images/icons/arrow-left.svg'>",
-    nextArrow: "<img class='slick-next' src='/images/icons/arrow-right.svg'>",
+    prevArrow: "<img alt='arrow icon' class='slick-prev' src='/images/icons/arrow-left.svg'>",
+    nextArrow: "<img alt='arrow icon' class='slick-next' src='/images/icons/arrow-right.svg'>",
     responsive: [
       {
         breakpoint: 1280,
@@ -97,7 +97,7 @@ $(document).ready(function() {
     const shortHeight = 120;
     const timeTableDays = $('.timetable-day');
 
-    timeTableDays.on('click', function (e) {
+    timeTableDays.on('click', function () {
       const height = Array.from(this.children).reduce((acc, curr) => acc + curr.clientHeight + 10, 0);
 
       timeTableDays.each((index, item) => {
@@ -112,25 +112,3 @@ $(document).ready(function() {
     });
   }
 });
-
-function setDynamicWidthToSliderNav(navContainer, dotsContainer) {
-  const sliderDots = $(`${dotsContainer}`);
-  const delta = $(window).width() < 768 ? 85 : 100;
-
-  $(`${navContainer}`)
-    .width(sliderDots.width() + delta)
-    .height(sliderDots.innerHeight());
-}
-
-function baseSliderOptions({ hasSliderChildren = false, configs = {} } = {}) {
-  return {
-    loop: true,
-    items: 1,
-    autoHeight: true,
-    nav: false,
-    touchDrag: hasSliderChildren,
-    mouseDrag: hasSliderChildren,
-    dots: hasSliderChildren,
-    ...configs,
-  };
-}
