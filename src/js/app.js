@@ -17,8 +17,8 @@ $(document).ready(function() {
     slidesToShow: 3,
     vertical: true,
     slidesToScroll: 1,
-    prevArrow: "<img alt='arrow icon' class='slick-prev' src='images/icons/arrow-left.svg'>",
-    nextArrow: "<img alt='arrow icon' class='slick-next' src='images/icons/arrow-right.svg'>",
+    prevArrow: "<img alt='arrow icon' class='slick-prev' src='/local/media/images/icons/arrow-left.svg'>",
+    nextArrow: "<img alt='arrow icon' class='slick-next' src='/local/media/images/icons/arrow-right.svg'>",
   });
   $('.banner--js-slider').slick({
     slidesToShow: 1,
@@ -35,8 +35,8 @@ $(document).ready(function() {
     slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.gallery--js-slider',
-    prevArrow: "<img alt='arrow icon' class='slick-prev' src='images/icons/arrow-left.svg'>",
-    nextArrow: "<img alt='arrow icon' class='slick-next' src='images/icons/arrow-right.svg'>",
+    prevArrow: "<img alt='arrow icon' class='slick-prev' src='/local/media/images/icons/arrow-left.svg'>",
+    nextArrow: "<img alt='arrow icon' class='slick-next' src='/local/media/images/icons/arrow-right.svg'>",
     responsive: [
       {
         breakpoint: 1280,
