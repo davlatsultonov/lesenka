@@ -249,23 +249,27 @@ p {
 	}
 }
 
-h1, h2, h3 {
+.h1, .h2, .h3 {
+	display: block;
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
 	font-weight: 700;
 }
 
-h1 {
+h1, .h1 {
 	font-size: 24px;
 	color: $base-yellow;
 	margin-bottom: 22px;
 }
 
-h2 {
+h2, .h2 {
 	font-size: 18px;
 	color: $base-red;
 	margin-bottom: 12px;
 }
 
-h3 {
+h3, .h3 {
 	font-size: 16px;
 	color: $base-red;
 	margin-bottom: 10px;

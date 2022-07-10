@@ -75,6 +75,7 @@
 
     #{$super}__img {
       max-width: 200px;
+      min-width: 200px;
       width: 100%;
       margin-bottom: 0;
 
@@ -83,13 +84,9 @@
         margin-right: auto;
         margin-bottom: 20px;
       }
-
-      &--lg-width {
-        max-width: 450px;
-      }
     }
 
-    &--lg {
+    &-lg {
       @include bp(md) {
         flex-direction: column;
       }
@@ -102,13 +99,16 @@
 
         &--lg {
           max-width: 450px;
+          min-width: 450px;
 
           @include bp(xlg) {
             max-width: 360px;
+            min-width: 360px;
           }
 
           @include bp(md) {
             max-width: 100%;
+            min-width: 100%;
           }
         }
       }
