@@ -9,6 +9,10 @@
     overflow: hidden;
   }
 
+  > a {
+    display: block;
+  }
+
   &__item {
     @include background-cover;
     width: 100%;
