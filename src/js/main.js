@@ -77,7 +77,7 @@ $(document).ready(function () {
   $('[data-fancybox="gallery"]').fancybox(fancyBoxOpts);
 
   // Custom dropdown
-  const selectDefaultItem = $('.select-block__default');
+  /* const selectDefaultItem = $('.select-block__default');
   const selectDropdownList = $('.select-block__list');
   const selectDropdownItems = $('.select-block__list li');
 
@@ -91,7 +91,7 @@ $(document).ready(function () {
     const current = $(this).html();
     selectDefaultItem.find('li').html(current);
     $(this).parents('.select-block').removeClass('active');
-  });
+  }); */
 
   // Division tab
   const $divisionTab = $('.tab_js');
