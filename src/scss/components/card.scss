@@ -56,6 +56,10 @@
   .text-with-icon {
     margin-top: auto;
     margin-bottom: auto;
+
+    &__img + * {
+      margin-left: 15px;
+    }
   }
 
   & + p {

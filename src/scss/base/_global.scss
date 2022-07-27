@@ -29,7 +29,7 @@ a {
 }
 
 p {
-	line-height: 1.3;
+	line-height: normal;
 
 	&:not(:last-child) {
 		margin-bottom: 10px;
@@ -251,6 +251,10 @@ p {
 
 .h1, .h2, .h3 {
 	display: block;
+}
+
+.short {
+	max-width: 355px;
 }
 
 h1, h2, h3, .h1, .h2, .h3 {
