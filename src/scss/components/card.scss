@@ -60,6 +60,10 @@
     &__img + * {
       margin-left: 15px;
     }
+
+    &__footer {
+      margin-left: 40px;
+    }
   }
 
   & + p {
@@ -192,6 +196,24 @@
 
         @include bp(sm) {
           padding-left: 15px;
+        }
+      }
+    }
+
+    &-link {
+      min-height: 84px;
+
+      .text-with-icon__img {
+        max-width: 36px;
+        width: 100%;
+      }
+
+      h2 + .text-with-icon__img, p + .text-with-icon__img {
+        margin-left: auto;
+
+        img {
+          width: 18px;
+          margin-right: 0;
         }
       }
     }
