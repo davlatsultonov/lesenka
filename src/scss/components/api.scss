@@ -19,6 +19,13 @@
     border-radius: 10px;
   }
 
+  .api-column__item, .double-info > div, .narrow-block > div {
+    background-color: #7e7e7e;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
   @include bp(sm) {
     padding: 0;
     border: none;
@@ -44,13 +51,6 @@
       margin-bottom: 10px;
     }
   }
-}
-
-.api-column__item, .double-info > div, .narrow-block > div {
-  background-color: #7e7e7e;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
 }
 
 .container {
