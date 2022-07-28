@@ -6,10 +6,29 @@ window.jQuery = $;
 window.$ = $;
 require('@fancyapps/fancybox');
 
+function closeModal (target) {
+  $(document.body).css('overflow', '');
+  $(target).closest('.modal').removeClass('show');
+}
+
 $(document).ready(function () {
   $('[type="tel"]').mask('+7 (000) 000-0000');
   $('.menu-toggle-btn').on('click', function () {
     $('.mobile-menu').toggleClass('active');
+  });
+
+  $('.call-modal-btn').on('click', function () {
+    $(document.body).css('overflow', 'hidden');
+    $('.modal').addClass('show').find('.modal__content').scrollTop(0);
+  });
+
+  $('.modal__btn-close--js').on('click', function () {
+    closeModal(this);
+  });
+
+  $(document).on('click', function (e) {
+    const target = $(e.target);
+    if (target.hasClass('modal__shadow')) closeModal(target);
   });
 
   $('.look-book--js-slider').slick({
@@ -60,7 +79,7 @@ $(document).ready(function () {
         },
       },
     ],
-  })
+  });
 
   const fancyBoxOpts = {
     buttons: [

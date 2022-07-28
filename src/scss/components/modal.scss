@@ -1,0 +1,59 @@
+.modal {
+  position: fixed;
+  z-index: #{$modal};
+  @include positionExtend;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  &.show {
+    display: flex;
+  }
+
+  &__header {
+
+    > img {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__shadow {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: #{$modal-shadow};
+    background-color: #000;
+    opacity: .5;
+  }
+
+  &__content {
+    max-width: 850px;
+    height: calc(100% - 30px);
+    width: 100%;
+    padding: 40px 50px;
+    border-radius: #{$base-border-radius};
+    position: relative;
+    background-color: #fff;
+    z-index: #{$modal-content};
+    overflow-y: auto;
+  }
+
+  &__btn-close {
+    width: 18px;
+    height: 18px;
+    background: url("../images/icons/cross.svg") no-repeat center;
+    background-size: 18px;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+  }
+
+  &__footer {
+    margin-top: 50px;
+  }
+
+  .narrow-block {
+    max-width: 560px;
+  }
+}
