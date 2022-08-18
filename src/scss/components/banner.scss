@@ -22,21 +22,29 @@
   &__item {
     padding: 60px;
     background-size: cover !important;
-    height: 314px;
+    height: 300px;
     display: inline-flex !important;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 
+    @include bp(xlg) {
+      padding: 30px;
+    }
 
     @include bp(md) {
-      padding: 25px 30px;
-      height: 300px;
       justify-content: flex-start;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      height: 400px;
+      background-size: 200% !important;
+      background-position: 95% -23px !important;
     }
 
     @include bp(sm) {
-      padding-bottom: 90px;
+      height: 300px;
+      background-size: 200% !important;
+      background-position: 100% 0 !important;
     }
   }
 

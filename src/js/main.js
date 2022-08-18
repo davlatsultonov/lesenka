@@ -20,6 +20,7 @@ $(document).ready(function () {
   $('.call-modal-btn').on('click', function () {
     $(document.body).css('overflow', 'hidden');
     $('.modal').addClass('show').find('.modal__content').scrollTop(0);
+    $('.look-book--js-slider').slick('setPosition');
   });
 
   $('.modal__btn-close--js').on('click', function () {
