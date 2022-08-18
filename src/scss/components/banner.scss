@@ -30,6 +30,7 @@
 
     @include bp(xlg) {
       padding: 30px;
+      height: 290px;
     }
 
     @include bp(md) {
